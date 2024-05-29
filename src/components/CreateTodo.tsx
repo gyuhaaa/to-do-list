@@ -8,7 +8,7 @@ interface CreateTodoProps {
 
 const CreateTodo: FC<CreateTodoProps> = ({ todos, setTodos }) => {
   const [currentTodoId, setCurrentTodoId] = useState<number>(
-    todos[todos.length - 1].id
+    todos[todos.length - 1]?.id
   );
   const [content, setContent] = useState<string>("");
 
