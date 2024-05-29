@@ -7,7 +7,7 @@ const sampleData: ITodo[] = [
   {
     id: 1,
     content: "🏃🏻‍♀️ 달리기",
-    isDone: false,
+    isDone: true,
   },
   {
     id: 2,
@@ -27,7 +27,7 @@ const App: FC = () => {
   return (
     <Flex flexDir={"column"} minH={"100vh"}>
       <CreateTodo todos={todos} setTodos={setTodos} />
-      <TodoList todos={todos} />
+      <TodoList todos={todos} setTodos={setTodos} />
     </Flex>
   );
 };
